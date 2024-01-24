@@ -27,21 +27,62 @@
 </head>
 <body>
 
-    
-    <!-- Header section start from here -->
+<!-- Header section start from here -->
     <header>
 
 <!--nav bar -->
-
-       <nav>
+<nav>
+  <div class="navbar bg-base-100">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a><span style=" color: brown">Home</span></a></li>
+          <li><a>about</a></li>
+          <li><a>page</a></li>
+          <li><a>Blog</a></li>
+          <li><a>Contact</a></li>
+          <li>
+            <a>#</a>
+            <ul class="p-2">
+              <li><a>Submenu 1</a></li>
+              <li><a>Submenu 2</a></li>
+            </ul>
+          </li>
+          <li><a>#</a></li>
+        </ul>
+      </div>
+      <a class="btn btn-ghost gap-0 text-xl">Hockey<span style="color:brown">’</span>s</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a><span style="color: brown">Home</span></a></li>
+          <li><a>about</a></li>
+          <li><a>page</a></li>
+          <li><a>Blog</a></li>
+          <li><a>Contact</a></li>
+        <li>
+          <details>
+            <summary></summary>
+            <ul class="p-2">
+              <li><a>Submenu 1</a></li>
+              <li><a>Submenu 2</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </div>
+    <div class="navbar-end ">
+      <i class="fa-solid mr-5 fa-magnifying-glass"></i><a class="btn bg-red-500">Get Ticket</a>
+    </div>
+  </div>
+</nav>
     
       <div class="container max-auto lg:px-24 px-8">
         <div class="carousel w-full"> 
-        <div id="slide2" class="carousel-item relative w-full">
-          <div class="absolute right-5 font-white">
-            <h5 class="font-white">Meet all the heroes from the field</h5>
-            <p>Listen, don't meet your heroes. If you meet your heroes, you're always going to be disappointed.</p>
-          </div>
+        <div id="slide2" class="carousel-item  relative w-full">
               <img src="Images/1.png" class="" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#" class="btn btn-circle">❮</a> 
@@ -61,7 +102,7 @@
         </section>
 <div class=" lg:flex gird grid-cols-4">
     <!--Card one -->
-                <div class="card relative text-center w-96 bg-base-100 shadow-xl ">
+                <div class="card relative text-center w-96 bg-base-100">
                     <figure class="px-10 pt-10 text-red-500">
                         <div class="radial-progress" style="--value:87;" role="progressbar">87%</div>
                     </figure>
@@ -71,7 +112,7 @@
                       </div>
                     </div>
  <!--Card two -->
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div class="card w-96 bg-base-100">
                         <figure class="px-10 pt-10 text-green-500">
                             <div class="radial-progress" style="--value:95;" role="progressbar">95%</div>
                         </figure>
@@ -81,7 +122,7 @@
                           </div>
                         </div>
  <!--Card three -->
-                        <div class="card w-96 bg-base-100 shadow-xl">
+                        <div class="card w-96 bg-base-100">
                             <figure class="px-10 pt-10 text-yellow-500">
                                 <div class="radial-progress" style="--value:90;" role="progressbar">90%</div>
                             </figure>
@@ -91,7 +132,7 @@
                               </div>
                             </div>
  <!--Card four -->
-                            <div class="card w-96 bg-base-100 shadow-xl">
+                            <div class="card w-96 bg-base-100">
                                 <figure class="px-10 pt-10 text-blue-500">
                                     <div class="radial-progress" style="--value:80;" role="progressbar">80%</div>
                                 </figure>
@@ -102,37 +143,222 @@
                                 </div>
                             </div>
 </section>
+<!--Our product-->
 <section>
-<div class="card relative text-center w-full  bg-base-100 shadow-xl pt-20 pb-20 ">
+<div class="card relative text-center shadow-xl pt-20 pb-20 ">
   <h4 class="text-4xl font-bold"> Program Sections </h4>
-  <p>
-    Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. 
-  </p>
+  <p>Program sections, or psects, are simply a section of code or data.</p>
 </div>
-<div class=" flex grid grid-row-4">
+<div class=" grid grid-row-2 lg:flex grid grid-row-4">
 <div class=" border-2">
-<div class="bg-[url('Images/2.png')] bg-no-repeat p-40">
+  <!-- "1st image "-->
+<div class="bg-[url('Images/2.png')] bg-no-repeat grid grid-row-2 lg:flex grid grid-row-4 p-40  ">
   <h5 class=" font-extrabold right-5">Junior Program</h5>
-  <p class="font-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
-    enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla.</p>
+  <p class="font-white"></p>
     <button class="btn btn-secondary border-none bg-red-500">Secondary</button>
-<div class="bg-[url('Images/3.png')] bg-no-repeat Pl-60 p-40">
+    <!-- "2nd image "-->
+<div class="bg-[url('Images/3.png')] bg-no-repeat grid grid-row-2 lg:flex grid grid-row-4 p-40 relative right-5  border-raidus-5 top-180 pb-40">
   <h5 class="font-extrabold start right-5">Junior Program</h5>
-  <p class="relative w-520px">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
-    enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+  <p class="relative w-520px"></p>
     <button class="btn btn-secondary border-none bg-red-500">Secondary</button>
   </div>
-<div class="relative pl-40 border-2 items-end">
-<div class="bg-[url('Images/4.png')] bg-no-repeat p-40">
+  <!-- "3nd image "-->
+<div class="  lg:relative pl-40 items-end">
+<div class="bg-[url('Images/4.png')] bg-no-repeat  relative items-center justify-center p-60 right-80 top-80">
   <h5 class="font-extrabold items-center">Junior Program</h5>
-  <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
-    enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+<p></p>
     <button class="btn btn-secondary border-none bg-red-500">Secondary</button>
   </div>
 </section>
-</main>
-             <footer>
+
+<section>
+  |<div class="text-center pb-20 pt-20 decoration-dashed">
+    <h5 class="text-4xl font-extrabold">Our New Products</h5>
+    <p>Ice hockey has always been a dynamic and fast-paced sport, but it's not just the players who are evolving the technology behind the game is also advancing at an impressive pace.</p>
+  </div>
+  <!--Product Cards-->
   
-    </footer>
+  <div class="card lg:card-side bg-base-100  w-573px h-218px gap-2">
+    <figure><img src="Images/5.png" alt="Album"/></figure>
+    <p><i class="fa-solid fa-star"></i>5.0</p>
+    <p><i class="fa-regular fa-eye"></i>20</p>
+    <p><i class="fa-solid fa-heart"></i>200</p>
+    <div class="card-body w-573px h-218px  start">
+    <h2 class="card-title">World Cup Flags Football</h2>
+      <p>Shop high-quality unique World Cup Flags T-Shirts designed and sold by independent artists.</p>
+      <p>Price-$22.00</p>
+      <div class="card-actions justify-end">
+      <p><i class="fa-solid fa-cart-shopping"></i>Delivery Fee : Free</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card lg:card-side bg-base-100  w-573px h-218px gap-2">
+    <figure><img src="Images/5.png" alt="Album"/></figure>
+    <p><i class="fa-solid fa-star"></i>5.0</p>
+    <p><i class="fa-regular fa-eye"></i>20</p>
+    <p><i class="fa-solid fa-heart"></i>200</p>
+    <div class="card-body w-573px h-218px  start">
+    <h2 class="card-title">World Cup Flags Football</h2>
+      <p>Shop high-quality unique World Cup Flags T-Shirts designed and sold by independent artists.</p>
+      <p>Price-$22.00</p>
+      <div class="card-actions justify-end">
+      <p><i class="fa-solid fa-cart-shopping"></i>Delivery Fee : Free</p>
+      </div>
+    </div>
+
+    <div class="card lg:card-side bg-base-100  w-573px h-218px gap-2">
+      <figure><img src="Images/5.png" alt="Album"/></figure>
+      <p><i class="fa-solid fa-star"></i>5.0</p>
+      <p><i class="fa-regular fa-eye"></i>20</p>
+      <p><i class="fa-solid fa-heart"></i>200</p>
+      <div class="card-body w-573px h-218px  start">
+      <h2 class="card-title">World Cup Flags Football</h2>
+        <p>Shop high-quality unique World Cup Flags T-Shirts designed and sold by independent artists.</p>
+        <p>Price-$22.00</p>
+        <div class="card-actions justify-end">
+        <p><i class="fa-solid fa-cart-shopping"></i>Delivery Fee : Free</p>
+        </div>
+      </div>
+
+      <div class="card lg:card-side bg-base-100  w-573px h-218px gap-2">
+        <figure><img src="Images/5.png" alt="Album"/></figure>
+        <p><i class="fa-solid fa-star"></i>5.0</p>
+        <p><i class="fa-regular fa-eye"></i>20</p>
+        <p><i class="fa-solid fa-heart"></i>200</p>
+        <div class="card-body w-573px h-218px  start">
+        <h2 class="card-title">World Cup Flags Football</h2>
+          <p>Shop high-quality unique World Cup Flags T-Shirts designed and sold by independent artists.</p>
+          <p>Price-$22.00</p>
+          <div class="card-actions justify-end">
+          <p><i class="fa-solid fa-cart-shopping"></i>Delivery Fee : Free</p>
+          </div>
+        </div>
+
+
+
+  </section>
+
+  <section>
+    <div class="relative pb-20 text-center pt-20 decoration-dashed items-center justify-center">
+      <h5 class="font-extrabold text-4xl ">Clients Question</h5>
+      <p> It's essential to gather relevant information to better understand their needs and expectations.</p>
+    </div>
+    <div class="relative bg-base-200">
+      <div class="hero-content flex-col lg:flex-row">
+        <img src="Images/11.png" class="max-w-sm rounded-lg shadow-2xl" />
+        <div class="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" checked="checked" /> 
+          <div class="collapse-title text-xl font-medium">
+            Our Equipment
+          </div>
+          <div class="collapse-content"> 
+            <p>This usually includes a helmet, shoulder pads/chest protector, elbow pads, mouth guard, protective gloves, heavily padded shorts, a 'jock' athletic protector, shin pads and a neck guard. Goaltenders wear masks and much bulkier, specialized equipment designed to protect them from many direct hits from the puck.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" /> 
+          <div class="collapse-title text-xl font-medium">
+            Hockey Training
+          </div>
+          <div class="collapse-content"> 
+            <p>I first strapped skates on when I was just two years old in my backyard rink in Ontario, Canada, and have been in love with the game ever since. 30 years later, and I still enjoy playing men's league hockey, but more importantly, sharing my love of the game with the younger generation of players through coaching.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" /> 
+          <div class="collapse-title text-xl font-medium">
+            Private Lessons
+          </div>
+          <div class="collapse-content"> 
+            <p>For my two oldest sons, I've gone out and hired coaches to give my kids private lessons above and beyond what they get with their full time team with costs ranging between $60 and $120 per hour.If you haven't heard of doing such a thing, or just never even considered the option, well, you'd be surprised at how many youth hockey players are taking advantage of private lessons.</p>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-medium">
+              Ski Touring
+            </div>
+            <div class="collapse-content"> 
+              <p>Ski touring is skiing in the backcountry on unmarked or unpatrolled areas. Touring is typically done off-piste and outside of ski resorts, and may extend over a period of more than one day.</p>
+            </div>
+  
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-medium">
+                Booking
+              </div>
+              <div class="collapse-content"> 
+                <p>Hockey fans can book ticket online by registering with the help of mobile number, Email Address, and Photo ID.</p>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3"/> 
+                <div class="collapse-title text-xl font-medium">
+                  Pricings
+                </div>
+                <div class="collapse-content"> 
+                  <p>Range: $500-$3,000
+                   League fees will vary depending on location, player age and house or travel league. As will the necessary ice fees parents pay each month to ensure access to ice time for practice. 
+                    Throw in a couple tournaments each season, entry fees and hotel costs for the tournament, and it can be a costly weekend especially once you add team dinners, other meals and the cost of travel. Let’s say a conservative $500-$750, and double that for two tournaments per year for $1,000–$1,500. Adjusted cost to play: $1,500-$4,500.</p>
+                </div>
+        </div>
+  
+  
+      </div>
+    </div>
+  </section>
+      </main>
+  
+  <!--footer section start from here -->
+  
+  
+      <footer class="footer footer-center bg-gray-500 text-base-content rounded ">
+  
+          <nav>
+            <div class="grid-flow-col gap-4">
+              <di>
+              <h5 class="flex font-bold"> Social Media </h5>
+            </di>
+            <div class="gap-4">
+              <i class="fa-brands fa-twitter"></i>
+                          <i class="fa-brands fa-square-facebook"></i>
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-github"></i>
+                        </div>
+                      </nav> 
+        </footer>
+      
+  </div>
+  <div>
+      <footer class="footer grid-rows-2 font-white p-10">
+                  <nav>
+                    <header class="footer-title font-extrabold ">Get In Touch</header> 
+                    <p>Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                    <p><i class="gap-2 fa-solid fa-envelope"></i>hockeys@support.com</p>
+                    <p><i class=" gap-2 fa-solid fa-phone-volume"></i>(+62) 123-321-543</p>
+                  </nav> 
+                  <nav>
+                    <header class=" flex flex-row footer-title ">Company</header> 
+                    <a class="link link-hover">About us</a>
+                    <a class="link link-hover">Leadership</a>
+                    <a class="link link-hover">Careers</a>
+                    <a class="link link-hover">News & Article</a>
+                    <a class="link link-hover">Legal Notice</a>
+                  </nav> 
+                  <nav>
+                    <header class=" font-extrabold footer-title ">Support</header> 
+                    <a class="link link-hover">Help Center</a>
+                    <a class="link link-hover">FAQ</a>
+                    <a class="link link-hover">Ticket Support</a>
+                    <a class="link link-hover">Contact Us</a>
+                  </nav> 
+                  <nav>
+                    <header class="font-extrabold footer-title">Services</header> 
+                    <a class="link link-hover">Academy</a>
+                    <a class="link link-hover">Group Lesson</a>
+                    <a class="link link-hover">iPrivate Lesson</a>
+                    <a class="link link-hover">Hockeys for kids</a>
+                    <a class="link link-hover">Hockeys for Adult</a>
+                  </nav>
+                </footer>
 </body>
 </html>
